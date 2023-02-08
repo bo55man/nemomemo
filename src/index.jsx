@@ -14,5 +14,6 @@ root.render(
         <Route path="/policy-term" element={ <PolicyTerm/> }></Route>
         <Route path="/privacy" element={ <Privacy/> }></Route>
       </Routes>
+      
   </BrowserRouter>
 );
