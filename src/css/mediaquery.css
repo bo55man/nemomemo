@@ -7,15 +7,6 @@
     flex-wrap: nowrap;
     margin: 100px 0px
   }
-  .input {
-    flex-flow: row nowrap;
-  }
-  .input__email {
-    width: 70%;
-  }
-  .input__submit {
-    width: 20%;
-  }
   .content__title {
     font-size: 44px;
   }

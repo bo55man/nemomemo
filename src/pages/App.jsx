@@ -58,7 +58,7 @@ function App() {
         loop></video>
         <div className="content__info">
           <h3> 인상적이었던 부분을 <br/> 북마크에 저장하고 <br className="line-change"/> 언제든 다시 찾아보세요. </h3>
-          <p> 직관적으로 저장하고 주변에 공유까지 <br className="line-change"/>간단하게. </p>
+          <p> 직관적으로 저장하고 주변에 공유까지 <br className="line-change"/>간단하게 완성하세요. </p>
         </div>
       </div>
       <div className="content__divider"></div>
