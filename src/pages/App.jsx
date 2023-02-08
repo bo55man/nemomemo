@@ -40,7 +40,7 @@ function App() {
         </div>
         <video
           className="content__video"
-          src="video/intro1.mov"
+          src="video/intro_a.mov"
           autoPlay
           playsInline
           muted
@@ -51,7 +51,7 @@ function App() {
       <div className="content__sub">
       <video
         className="content__video"
-        src="video/intro2.mov"
+        src="video/intro_b.mov"
         playsInline
         autoPlay
         muted
@@ -65,7 +65,7 @@ function App() {
       <div className="content__sub">
         <video
         className="content__video"
-        src="video/intro3.mov"
+        src="video/intro_c.mov"
         autoPlay
         playsInline
         muted
