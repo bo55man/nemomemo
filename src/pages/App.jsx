@@ -1,4 +1,4 @@
-import { Header, Footer, EmailSubmit } from 'components';
+import { Header, Footer} from 'components';
 import { useState } from 'react';
 import { dbService } from '../firebase';
 
@@ -30,14 +30,31 @@ function App() {
             <img className="link__mobile" src="img/android.png"/>
           </button>
         </div>
-        <img className="contentimg" src="img/LandingContents.png"/>
+        <img className="content_img" src="img/LandingContents.png"/>
       </div>
 
-      <div className="content__sub">
-        <div className="content__info">
-          <h3> 미니멀리즘 UI/UX </h3>
-          <p> 독서노트는 심플하고 예뻐야 쓰고 싶어집니다. <br/> 네모는 최소한의 기능과 최고의 디자인을 <br className="line-change"/> 적용했습니다. </p>
+      <div className="mission">
+        <h2 className="mission__title">네모의 핵심 3가지</h2>
+        <div className="mission__content">
+          <img className="mission__img" src="img/Memo.png"/>
+          <div className="mission__element">메모</div>
+          <p className="">책을 읽다가 기록하고 싶은 내용, <br/> 떠올린 생각을 네모에 남기세요. </p>
         </div>
+        <div className="mission__content">
+          <img className="mission__img" src="img/Catg.png"/>
+          <div className="mission__element">정리</div>
+          <p className="">메모는 날짜와 책별로 분류됩니다. <br/>네모리스트를 생성하여 원하는대로 분류해보세요.</p>
+        </div>
+        <div className="mission__content">
+          <img className="mission__img" src="img/Share.png"/>
+          <div className="mission__element">공유</div>
+          <p className="">유저들이 남긴 메모는 정리된 형태로 <br/> 탐색, 검색할 수 있습니다.</p>
+        </div>
+      </div>
+
+
+
+      <div className="content__sub">
         <video
           className="content__video"
           src="video/intro_a.mov"
@@ -46,33 +63,41 @@ function App() {
           muted
           loop>
         </video>
-      </div>
-      <div className="content__divider"></div>
-      <div className="content__sub">
-      <video
-        className="content__video"
-        src="video/intro_b.mov"
-        playsInline
-        autoPlay
-        muted
-        loop></video>
         <div className="content__info">
-          <h3> 인상적이었던 부분을 <br/> 북마크에 저장하고 <br className="line-change"/> 언제든 다시 찾아보세요. </h3>
-          <p> 직관적으로 저장하고 주변에 공유까지 <br className="line-change"/>간단하게 완성하세요. </p>
+          <h3> 미니멀리즘 UI/UX </h3>
+          <p> 독서노트는 심플하고 예뻐야 쓰고 싶어집니다. <br/> 네모는 최소한의 기능과 최고의 디자인을 <br className="line-change"/> 적용했습니다. </p>
         </div>
       </div>
       <div className="content__divider"></div>
       <div className="content__sub">
         <video
-        className="content__video"
-        src="video/intro_c.mov"
-        autoPlay
-        playsInline
-        muted
-        loop></video>
+          className="content__video"
+          src="video/intro_b.mov"
+          playsInline
+          autoPlay
+          muted
+          loop>
+        </video>
         <div className="content__info">
-          <h3> 책의 유비쿼터스를 경험하세요. </h3>
-          <p> 인터넷만 연결된다면 OK입니다. 언제 어디서든, 다양한 디바이스와 브라우저에서 로제타와 함께하세요. </p>
+            <h3> 사진에서 텍스트를 빠르게 </h3>
+            <p> OCR 기술을 지원합니다. <br/>
+            종이 문서를 신속하게 디지털화하여<br/>
+            시간을 절약하고 생산성을 높이세요. </p>
+        </div>
+      </div>
+      <div className="content__divider"></div>
+      <div className="content__sub">
+        <video
+          className="content__video"
+          src="video/intro_c.mov"
+          autoPlay
+          playsInline
+          muted
+          loop>
+        </video>
+        <div className="content__info">
+          <h3> 책을 매개로 사람과 연결되는 삶 </h3>
+          <p> 다른 컨텐츠를 좋아요하고 <br/> 팔로우로 관심사를 공유함으로써 <br/> 새로운 시야를 얻고  <br className="line-change"/>지속적인 관계를 형성할 수 있습니다. </p>
         </div>
       </div>
     </main>
