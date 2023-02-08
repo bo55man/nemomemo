@@ -79,25 +79,30 @@
 .content__info {
   width: 90%;
   height: auto;
-  margin: 20px 0px;
+  margin: 15px 0px;
 }
 
-.content__img {
-  width: 90%;
+.content__video {
+  width: 60%;
   height: auto;
   object-fit: contain;
   margin: 20px 0px;
+  border-radius: 12px;
+  /* border: 5px solid #000000;
+  box-sizing: border-box; */
+  outline: solid 2px #ffffff;
+  outline-offset: -2px;
 }
 
 h3 {
-  font-size: 25.5px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 1.5;
   margin: 5px 0px;
 }
 p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 500;
   margin: 15px 0px;
   line-height: 1.5;
 }

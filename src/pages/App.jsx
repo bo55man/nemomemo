@@ -17,10 +17,10 @@ function App() {
           책에 담긴 생각이 
           <br/> 소중한 사람을 만나는 곳, Nemo 
         </h2>
+
         <div className="content__title--sub"> 
           네모는 단순한 독서기록 앱이 아닙니다. 
           <br/> 메모, 정리, 공유를 통해 지식을 쌓아보세요.
-          {/* <br className="line-change"/>*/}
         </div> 
         <div className="content__link">
           <button className="link__btn" onClick={() => {window.open(ios)}}>
@@ -34,22 +34,23 @@ function App() {
       </div>
 
       <div className="content__sub">
-      <video
-        className="content__img"
-        src="video/intro1.mov"
-        autoPlay
-        playsInline
-        muted
-        loop></video>
         <div className="content__info">
-          <h3> 책을 웹에서 바로 만나보세요. </h3>
-          <p> PDF, 전자책처럼 디바이스에 일일히 저장할 필요 없습니다. 웹 브라우저에서 검색 한번으로 원하는 부분만 빠르고 간편하게 열람하세요. </p>
+          <h3> 미니멀리즘 UI/UX </h3>
+          <p> 독서노트는 심플하고 예뻐야 쓰고 싶어집니다. <br/> 네모는 최소한의 기능과 최고의 디자인을 <br className="line-change"/> 적용했습니다. </p>
         </div>
+        <video
+          className="content__video"
+          src="video/intro1.mov"
+          autoPlay
+          playsInline
+          muted
+          loop>
+        </video>
       </div>
       <div className="content__divider"></div>
       <div className="content__sub">
       <video
-        className="content__img"
+        className="content__video"
         src="video/intro2.mov"
         playsInline
         autoPlay
@@ -63,7 +64,7 @@ function App() {
       <div className="content__divider"></div>
       <div className="content__sub">
         <video
-        className="content__img"
+        className="content__video"
         src="video/intro3.mov"
         autoPlay
         playsInline
