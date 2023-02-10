@@ -20,11 +20,14 @@
     width: auto;
   }
   .content__video {
-    width: 28%;
-    margin: 0px 40px 0px 8%;
+    width: 26%;
+    margin: 0px 3% 0px 5%;
+  }
+  .content__info {
+    width: 54%;
   }
   .content__img2 {
-    width: 28%;
+    width: 26%;
     margin: 0px 40px 0px 8%;
   }
   .title__name {
@@ -47,7 +50,7 @@
   .content_img {
     margin-bottom: 20px;
     object-fit: cover;
-    width: 70%;
+    width: 75%;
   }
   .mission {
     flex-direction: row;
@@ -97,6 +100,10 @@
   }
   .content__title--sub2 {
     font-size: 23px;
+  }
+  .content__info {
+    width: 58%;
+    margin-left: 2%;
   }
   h3 {
     font-size: 32px;

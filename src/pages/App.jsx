@@ -94,7 +94,7 @@ function App() {
         </video>
         <div className="content__info">
           <h3> 책을 매개로 사람과 연결되는 삶 </h3>
-          <p> 다른 컨텐츠를 좋아요하고 <br/> 팔로우로 관심사를 공유함으로써 <br/> 새로운 시야를 얻고  <br className="line-change"/>지속적인 관계를 형성할 수 있습니다. </p>
+          <p> 다른 컨텐츠를 좋아요하고 <br/> 팔로우로 관심사를 공유함으로써 <br/> 새로운 시야를 얻고<br className="line-change"/>지속적인 관계를 형성할 수 있습니다. </p>
         </div>
       </div>
 
@@ -110,7 +110,7 @@ function App() {
         </video>
         <div className="content__info">
           <h3> 독서 여행을 시작하세요. </h3>
-          <p> 나만의 메모 달력과 개인 맞춤형 컨텐츠를 통해 <br/> 독서 습관을 들여보세요. <br/> 책에 대한 사랑을 키우고 지식 증가를 확인하세요 </p>
+          <p> 나만의 메모 달력과 개인 맞춤형 컨텐츠를 통해 <br/> 독서 습관을 들여보세요. <br/> 책에 대한 사랑을 키우고 지식 증가를 <br className="line-change"/> 확인하세요 </p>
         </div>
       </div>
 
