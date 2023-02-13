@@ -29,9 +29,10 @@ function App() {
             <img className="link__mobile" src="img/android.png"/>
           </button>
         </div>
+      </div>
+      <div className="imgContent" >
         <img className="content_img" src="img/LandingContents.png"/>
       </div>
-
       <h2 className="mission__title">네모의 핵심 3가지</h2>
       <div className="mission">
           <div className="mission__content">
