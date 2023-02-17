@@ -1,12 +1,13 @@
 import { Icon } from '@iconify/react';
 import { useState } from 'react';
 import {Link} from 'react-router-dom';
+import firebase from "firebase/compat/app";
+import 'firebase/compat/analytics';
 
 
 function Header() {
   let [menu, setMenu] = useState(false);
   const instagram = "https://www.instagram.com/nemomemo.official/";
-
 
   return(
     <>
@@ -43,15 +44,25 @@ function Menu() {
 
 function checkMobile(){
   let detector = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+  console.log(detector);
   
   if ( detector.indexOf('android') > -1){
     window.open("https://play.google.com/store/apps/details?id=com.cjs0410.Nemo")
+    firebase.analytics().logEvent("clickAndroid", {
+      test: 1,
+    })
     return;
   } else if (detector.indexOf("iphone") > -1|| detector.indexOf("ipad") > -1|| detector.indexOf('ipod') > -1){
     window.open("https://apps.apple.com/kr/app/nemo-%EC%B1%85%EC%9D%84-%EA%B8%B0%EC%96%B5%ED%95%98%EB%8A%94-%EC%B5%9C%EA%B3%A0%EC%9D%98-%EB%B0%A9%EB%B2%95/id6444700224")
+    firebase.analytics().logEvent("clickIos", {
+      test: 1,
+    })
     return;
   } else {
     window.open("https://linktr.ee/nemo.official")
+    firebase.analytics().logEvent("clickLT", {
+      test: 1,
+    })
     return;
   }
 

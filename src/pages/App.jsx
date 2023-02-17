@@ -1,12 +1,29 @@
 import { Header, Footer} from 'components';
 import { useState } from 'react';
 import { dbService } from '../firebase';
+import firebase from "firebase/compat/app";
+import 'firebase/compat/analytics';
+// import { getAnalytics, logEvent } from "firebase/analytics";
 
 
 function App() {
 
   const ios = "https://apps.apple.com/kr/app/nemo-%EC%B1%85%EC%9D%84-%EA%B8%B0%EC%96%B5%ED%95%98%EB%8A%94-%EC%B5%9C%EA%B3%A0%EC%9D%98-%EB%B0%A9%EB%B2%95/id6444700224";
   const android = "https://play.google.com/store/apps/details?id=com.cjs0410.Nemo";
+
+  const onClickIos = () => {
+    window.open(ios);
+    firebase.analytics().logEvent("clickIos", {
+      test: 1,
+    })
+  }
+
+  const onClickAndroid = () => {
+    window.open(android);
+    firebase.analytics().logEvent("clickAndroid", {
+      test: 1,
+    })
+  }
 
   return (
     <>
@@ -22,10 +39,13 @@ function App() {
           <br/> 메모, 정리, 공유를 통해 지식을 쌓아보세요.
         </div> 
         <div className="content__link">
-          <button className="link__btn" onClick={() => {window.open(ios)}}>
+          <button 
+            className="link__btn" 
+            onClick={onClickIos}
+          >
             <img className="link__mobile" src="img/ios.png"/>
           </button>
-          <button className="link__btn" onClick={() => {window.open(android)}}>
+          <button className="link__btn" onClick={onClickAndroid}>
             <img className="link__mobile" src="img/android.png"/>
           </button>
         </div>
@@ -132,10 +152,10 @@ function App() {
           Nemo로 시작하세요.
         </h2>
         <div className="content__link">
-          <button className="link__btn" onClick={() => {window.open(ios)}}>
+          <button className="link__btn" onClick={onClickIos}>
             <img className="link__mobile" src="img/ios.png"/>
           </button>
-          <button className="link__btn" onClick={() => {window.open(android)}}>
+          <button className="link__btn" onClick={onClickAndroid}>
             <img className="link__mobile" src="img/android.png"/>
           </button>
         </div>
